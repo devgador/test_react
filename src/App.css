@@ -1,0 +1,258 @@
+/* Root styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card and docs styles */
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Navigation styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #f0f2f4;
+  border-bottom: solid 1px #ccc;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  color: #5378c3;
+}
+
+.navbar-text {
+  color: #080808;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: auto;
+  cursor: default;
+  user-select: none;
+}
+
+/* Form styles */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input[readonly] {
+  background-color: #eee;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+/* Button styles */
+.button {
+  background-color: #638de2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #231ff9;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+  background-color: #638de2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(0.98);
+}
+
+.button:focus {
+  outline: 2px solid #638de2;
+  outline-offset: 2px;
+}
+
+/* Button styles (removed redundant styles) */
+/* .button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button[type="button"] {
+  background-color: #f0f2f0;
+  color: #333;
+}
+
+.button[type="button"]:hover {
+  background-color: #e0e0e0;
+} */
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.notification-success,
+.notification-error,
+.notification-dialog {
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.notification-success {
+  background-color: #abefa1;
+  color: #090a09;
+  border: 1px solid #047b39;
+}
+
+.notification-error {
+  background-color: #ed9696;
+  color: #080707;
+  border: 1px solid #d7063e;
+}
+
+.notification-dialog {
+  background-color: #d19b12;
+  color: #950b0b;
+  border: 1px solid #d7063e;
+}
+
+.close-btn-success {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #7e4f1a;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Miscellaneous styles */
+.green-line {
+  border: 2px solid green;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.left-align {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
